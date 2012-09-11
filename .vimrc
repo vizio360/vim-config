@@ -47,3 +47,4 @@ let g:tagbar_type_coffee = {
   \},
   \ 'deffile' : expand('<sfile>:p:h') . '/.vim/coffee.ctags'
   \ }
+
