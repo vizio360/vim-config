@@ -1,4 +1,6 @@
 call pathogen#infect()
+set t_Co=256
+colorscheme jellybeans
 syntax on
 filetype plugin indent on
 set tabstop=4
@@ -13,6 +15,7 @@ map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 map <C-H> <C-W>h<C-W>_
 map <C-L> <C-W>l<C-W>_
+map <C-E> <C-W>=
 map <F2> :NERDTreeToggle<CR>
 map <F12> :qall<CR>
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
@@ -78,3 +81,11 @@ endfunction
 
 command! -complete=shellcmd -nargs=* -bang Shell call s:ExecuteInShell(<q-args>, '<bang>')
 cabbrev shell Shell
+"search and replace in current file
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+autocmd BufWritePost *.coffee !coffeelint -f ~/coffeelint.json <afile> 
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+"set foldlevel=1
+
