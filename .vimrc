@@ -83,9 +83,10 @@ command! -complete=shellcmd -nargs=* -bang Shell call s:ExecuteInShell(<q-args>,
 cabbrev shell Shell
 "search and replace in current file
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
-autocmd BufWritePost *.coffee !coffeelint -f ~/coffeelint.json <afile> 
+"autocmd  BufWritePost *.coffee silent! !coffeelint -f ~/coffeelint.json <afile>
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 "set foldlevel=1
 
+let NERDTreeShowLineNumbers=1
