@@ -90,3 +90,5 @@ set nofoldenable        "dont fold by default
 "set foldlevel=1
 
 let NERDTreeShowLineNumbers=1
+let g:syntastic_coffee_coffeelint_args="--file ~/coffeelint.json"
+set hlsearch
