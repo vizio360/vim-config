@@ -10,6 +10,7 @@ set number
 set bs=2  
 " autochange the current dir based on the file opened
 " set autochdir
+" autoload NERDTree on startup if no specific file is passed to vim command
 autocmd vimenter * if !argc() | NERDTree | endif
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
@@ -92,3 +93,9 @@ set nofoldenable        "dont fold by default
 let NERDTreeShowLineNumbers=1
 let g:syntastic_coffee_coffeelint_args="--file ~/coffeelint.json"
 set hlsearch
+"n to search forward and N to search backward.
+set incsearch
+"powerline status bar
+"let g:Powerline_symbols = 'fancy'
+" show status bar always, even if only one window open
+set laststatus=2
