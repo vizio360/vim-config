@@ -89,9 +89,11 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 "set foldlevel=1
-
+"show line numbers in NERDTree
 let NERDTreeShowLineNumbers=1
-let g:syntastic_coffee_coffeelint_args="--file ~/coffeelint.json"
+"use a custom coffeelint options file for syntastic
+let g:syntastic_coffee_coffeelint_args="--csv --file ~/coffeelint.json"
+"show the search result with an highlight effect
 set hlsearch
 "n to search forward and N to search backward.
 set incsearch
