@@ -6,7 +6,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set number
+set relativenumber
 set bs=2  
 " autochange the current dir based on the file opened
 " set autochdir
