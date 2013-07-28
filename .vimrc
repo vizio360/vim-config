@@ -1,4 +1,47 @@
-call pathogen#infect()
+" call pathogen#infect()
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" " required! 
+Bundle 'gmarik/vundle'
+"
+" " My Bundles here:
+" "
+" " original repos on github
+Bundle 'majutsushi/tagbar'
+Bundle 'pangloss/vim-javascript'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'mattn/zencoding-vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-fugitive'
+Bundle 'joonty/vim-sauce.git'
+
+" Bundle 'tomtom/tlib_vim'
+" Bundle 'altercation/vim-colors-solarized'
+"
+" " Github repos of the user 'vim-scripts'
+" " => can omit the username part
+" Bundle 'L9'
+" Bundle 'FuzzyFinder'
+"
+" " non github repos
+Bundle 'git://git.wincent.com/command-t.git'
+" " ...
+"
+" filetype plugin indent on     " required!
+"
 set t_Co=256
 colorscheme jellybeans
 syntax on
