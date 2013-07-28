@@ -27,6 +27,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'joonty/vim-sauce.git'
+Bundle 'joonty/vim-taggatron'
 
 " Bundle 'tomtom/tlib_vim'
 " Bundle 'altercation/vim-colors-solarized'
@@ -136,6 +137,8 @@ set nofoldenable        "dont fold by default
 let NERDTreeShowLineNumbers=1
 "use a custom coffeelint options file for syntastic
 let g:syntastic_coffee_coffeelint_args="--csv --file ~/coffeelint.json"
+" php checkers
+let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 "show the search result with an highlight effect
 set hlsearch
 "n to search forward and N to search backward.
