@@ -28,6 +28,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'joonty/vim-sauce.git'
 Bundle 'joonty/vim-taggatron'
+Bundle 'chilicuil/vim-sml-coursera' 
 
 " Bundle 'tomtom/tlib_vim'
 " Bundle 'altercation/vim-colors-solarized'
